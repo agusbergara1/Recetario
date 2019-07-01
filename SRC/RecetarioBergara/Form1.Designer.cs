@@ -93,6 +93,7 @@
             // 
             // ListaIngredientes_listBox
             // 
+            this.ListaIngredientes_listBox.DisplayMember = "Nombre";
             this.ListaIngredientes_listBox.FormattingEnabled = true;
             this.ListaIngredientes_listBox.Location = new System.Drawing.Point(419, 76);
             this.ListaIngredientes_listBox.Name = "ListaIngredientes_listBox";

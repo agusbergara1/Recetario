@@ -19,7 +19,8 @@ namespace RecetarioBergara
 
         private void Agregar_button_Click(object sender, EventArgs e)
         {
-            Controlador.Agregar(Ingrediente_textBox.Text, decimal.Parse(Cantidad_textBox.Text), decimal.Parse(Precio_textBox.Text), int.Parse(pdp_textBox.Text)); 
+            Controlador.Agregar(Ingrediente_textBox.Text, decimal.Parse(Cantidad_textBox.Text), decimal.Parse(Precio_textBox.Text), int.Parse(pdp_textBox.Text));
+            refrescarListBox();
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -40,13 +41,23 @@ namespace RecetarioBergara
         private void Modificar_button_Click(object sender, EventArgs e)
         {
             Ingrediente ingredienteSeleccionado = ListaIngredientes_listBox.SelectedItem as Ingrediente;
-            Controlador.Modificar(Ingrediente_textBox.Text, decimal.Parse(Cantidad_textBox.Text), decimal.Parse(Precio_textBox.Text), int.Parse(pdp_textBox.Text));
+            Controlador.Modificar(Ingrediente_textBox.Text, decimal.Parse(Cantidad_textBox.Text), decimal.Parse(Precio_textBox.Text), int.Parse(pdp_textBox.Text), ingredienteSeleccionado);
+            refrescarListBox();
         }
 
         private void Eliminar_button_Click(object sender, EventArgs e)
         {
             Ingrediente ingredienteSeleccionado = ListaIngredientes_listBox.SelectedItem as Ingrediente;
-            Controlador.Eliminar(Ingrediente_textBox.Text, decimal.Parse(Cantidad_textBox.Text), decimal.Parse(Precio_textBox.Text), int.Parse(pdp_textBox.Text));
+            Controlador.Eliminar(ingredienteSeleccionado);
+            refrescarListBox();
+        }
+        private void refrescarListBox()
+        {
+            ListaIngredientes_listBox.Items.Clear();
+            foreach (Ingrediente ingrediente in Controlador.Ingredientes)
+            {
+                ListaIngredientes_listBox.Items.Add(ingrediente);
+            }
         }
     }
 }
