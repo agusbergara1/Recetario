@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace RecetarioBergara
 {
-    public class Recetas
+    public class Receta
     {
         public string Nombre { get; set; }
-        public string Ingredientes { get; set; }
+        public List<IngredienteReceta> Ingredientes { get; set; } 
     }
 }

@@ -59,5 +59,10 @@ namespace RecetarioBergara
                 ListaIngredientes_listBox.Items.Add(ingrediente);
             }
         }
+
+        private void Ingrediente_textBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -8,6 +8,7 @@ namespace RecetarioBergara
 {
     public class IngredienteReceta
     {
-        public decimal Stock { get; set;}
+        public Ingrediente Ingrediente { get; set; }
+        public decimal Cantidad { get; set;}
     }
 }

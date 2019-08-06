@@ -76,6 +76,7 @@
             this.Ingrediente_textBox.Name = "Ingrediente_textBox";
             this.Ingrediente_textBox.Size = new System.Drawing.Size(156, 20);
             this.Ingrediente_textBox.TabIndex = 3;
+            this.Ingrediente_textBox.TextChanged += new System.EventHandler(this.Ingrediente_textBox_TextChanged);
             // 
             // Cantidad_textBox
             // 
