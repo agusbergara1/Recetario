@@ -29,7 +29,7 @@ namespace RecetarioBergara
 
         private void AgregarReceta_button_Click(object sender, EventArgs e)
         {
-            Controlador.Agregar(NombreReceta_textBox, CantidadReceta_textBox, Ingrediente_comboBox);
+            Controlador.Agregar (NombreReceta_textBox, CantidadReceta_textBox, Ingrediente_comboBox);
         }
 
         private void Receta_listBox_SelectedIndexChanged(object sender, EventArgs e)
