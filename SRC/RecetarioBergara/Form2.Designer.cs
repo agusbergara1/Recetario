@@ -38,18 +38,18 @@
             this.Recetas_listBox = new System.Windows.Forms.ListBox();
             this.Ingrediente_comboBox = new System.Windows.Forms.ComboBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.ContenidoReceta_listBox = new System.Windows.Forms.ListBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.AgregarContenido_button = new System.Windows.Forms.Button();
-            this.GuardarReceta_button = new System.Windows.Forms.Button();
             this.ModificarReceta_button = new System.Windows.Forms.Button();
-            this.EliminarContenido_button = new System.Windows.Forms.Button();
+            this.GuardarReceta_button = new System.Windows.Forms.Button();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.GuardarContenido_button = new System.Windows.Forms.Button();
+            this.EliminarContenido_button = new System.Windows.Forms.Button();
+            this.label5 = new System.Windows.Forms.Label();
+            this.ContenidoReceta_listBox = new System.Windows.Forms.ListBox();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.ModificarContenido_button = new System.Windows.Forms.Button();
+            this.AgregarContenido_button = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -99,7 +99,7 @@
             // 
             // AgregarReceta_button
             // 
-            this.AgregarReceta_button.Location = new System.Drawing.Point(21, 77);
+            this.AgregarReceta_button.Location = new System.Drawing.Point(21, 82);
             this.AgregarReceta_button.Name = "AgregarReceta_button";
             this.AgregarReceta_button.Size = new System.Drawing.Size(104, 23);
             this.AgregarReceta_button.TabIndex = 6;
@@ -151,6 +151,24 @@
             this.groupBox1.Text = "Crea tu receta";
             this.groupBox1.Enter += new System.EventHandler(this.GroupBox1_Enter);
             // 
+            // ModificarReceta_button
+            // 
+            this.ModificarReceta_button.Location = new System.Drawing.Point(131, 82);
+            this.ModificarReceta_button.Name = "ModificarReceta_button";
+            this.ModificarReceta_button.Size = new System.Drawing.Size(75, 23);
+            this.ModificarReceta_button.TabIndex = 10;
+            this.ModificarReceta_button.Text = "Modificar";
+            this.ModificarReceta_button.UseVisualStyleBackColor = true;
+            // 
+            // GuardarReceta_button
+            // 
+            this.GuardarReceta_button.Location = new System.Drawing.Point(281, 213);
+            this.GuardarReceta_button.Name = "GuardarReceta_button";
+            this.GuardarReceta_button.Size = new System.Drawing.Size(59, 23);
+            this.GuardarReceta_button.TabIndex = 9;
+            this.GuardarReceta_button.Text = "Guardar";
+            this.GuardarReceta_button.UseVisualStyleBackColor = true;
+            // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.GuardarContenido_button);
@@ -167,22 +185,40 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Compone tu receta";
             // 
-            // comboBox1
+            // GuardarContenido_button
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(16, 36);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(166, 21);
-            this.comboBox1.TabIndex = 10;
+            this.GuardarContenido_button.Location = new System.Drawing.Point(253, 234);
+            this.GuardarContenido_button.Name = "GuardarContenido_button";
+            this.GuardarContenido_button.Size = new System.Drawing.Size(70, 23);
+            this.GuardarContenido_button.TabIndex = 16;
+            this.GuardarContenido_button.Text = "Guardar";
+            this.GuardarContenido_button.UseVisualStyleBackColor = true;
             // 
-            // label4
+            // EliminarContenido_button
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(13, 20);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(105, 13);
-            this.label4.TabIndex = 11;
-            this.label4.Text = "Selecciona tu receta";
+            this.EliminarContenido_button.Location = new System.Drawing.Point(191, 234);
+            this.EliminarContenido_button.Name = "EliminarContenido_button";
+            this.EliminarContenido_button.Size = new System.Drawing.Size(56, 23);
+            this.EliminarContenido_button.TabIndex = 15;
+            this.EliminarContenido_button.Text = "Eliminar";
+            this.EliminarContenido_button.UseVisualStyleBackColor = true;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(188, 16);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(125, 13);
+            this.label5.TabIndex = 14;
+            this.label5.Text = "Ingredientes de tu receta";
+            // 
+            // ContenidoReceta_listBox
+            // 
+            this.ContenidoReceta_listBox.FormattingEnabled = true;
+            this.ContenidoReceta_listBox.Location = new System.Drawing.Point(191, 33);
+            this.ContenidoReceta_listBox.Name = "ContenidoReceta_listBox";
+            this.ContenidoReceta_listBox.Size = new System.Drawing.Size(132, 199);
+            this.ContenidoReceta_listBox.TabIndex = 13;
             // 
             // groupBox3
             // 
@@ -198,22 +234,14 @@
             this.groupBox3.TabIndex = 12;
             this.groupBox3.TabStop = false;
             // 
-            // ContenidoReceta_listBox
+            // ModificarContenido_button
             // 
-            this.ContenidoReceta_listBox.FormattingEnabled = true;
-            this.ContenidoReceta_listBox.Location = new System.Drawing.Point(191, 33);
-            this.ContenidoReceta_listBox.Name = "ContenidoReceta_listBox";
-            this.ContenidoReceta_listBox.Size = new System.Drawing.Size(132, 199);
-            this.ContenidoReceta_listBox.TabIndex = 13;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(188, 16);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(125, 13);
-            this.label5.TabIndex = 14;
-            this.label5.Text = "Ingredientes de tu receta";
+            this.ModificarContenido_button.Location = new System.Drawing.Point(108, 123);
+            this.ModificarContenido_button.Name = "ModificarContenido_button";
+            this.ModificarContenido_button.Size = new System.Drawing.Size(60, 23);
+            this.ModificarContenido_button.TabIndex = 11;
+            this.ModificarContenido_button.Text = "Modificar";
+            this.ModificarContenido_button.UseVisualStyleBackColor = true;
             // 
             // AgregarContenido_button
             // 
@@ -224,50 +252,22 @@
             this.AgregarContenido_button.Text = "Agregar";
             this.AgregarContenido_button.UseVisualStyleBackColor = true;
             // 
-            // GuardarReceta_button
+            // label4
             // 
-            this.GuardarReceta_button.Location = new System.Drawing.Point(281, 213);
-            this.GuardarReceta_button.Name = "GuardarReceta_button";
-            this.GuardarReceta_button.Size = new System.Drawing.Size(59, 23);
-            this.GuardarReceta_button.TabIndex = 9;
-            this.GuardarReceta_button.Text = "Guardar";
-            this.GuardarReceta_button.UseVisualStyleBackColor = true;
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(13, 20);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(105, 13);
+            this.label4.TabIndex = 11;
+            this.label4.Text = "Selecciona tu receta";
             // 
-            // ModificarReceta_button
+            // comboBox1
             // 
-            this.ModificarReceta_button.Location = new System.Drawing.Point(131, 77);
-            this.ModificarReceta_button.Name = "ModificarReceta_button";
-            this.ModificarReceta_button.Size = new System.Drawing.Size(75, 23);
-            this.ModificarReceta_button.TabIndex = 10;
-            this.ModificarReceta_button.Text = "Modificar";
-            this.ModificarReceta_button.UseVisualStyleBackColor = true;
-            // 
-            // EliminarContenido_button
-            // 
-            this.EliminarContenido_button.Location = new System.Drawing.Point(191, 234);
-            this.EliminarContenido_button.Name = "EliminarContenido_button";
-            this.EliminarContenido_button.Size = new System.Drawing.Size(56, 23);
-            this.EliminarContenido_button.TabIndex = 15;
-            this.EliminarContenido_button.Text = "Eliminar";
-            this.EliminarContenido_button.UseVisualStyleBackColor = true;
-            // 
-            // GuardarContenido_button
-            // 
-            this.GuardarContenido_button.Location = new System.Drawing.Point(253, 234);
-            this.GuardarContenido_button.Name = "GuardarContenido_button";
-            this.GuardarContenido_button.Size = new System.Drawing.Size(70, 23);
-            this.GuardarContenido_button.TabIndex = 16;
-            this.GuardarContenido_button.Text = "Guardar";
-            this.GuardarContenido_button.UseVisualStyleBackColor = true;
-            // 
-            // ModificarContenido_button
-            // 
-            this.ModificarContenido_button.Location = new System.Drawing.Point(108, 123);
-            this.ModificarContenido_button.Name = "ModificarContenido_button";
-            this.ModificarContenido_button.Size = new System.Drawing.Size(60, 23);
-            this.ModificarContenido_button.TabIndex = 11;
-            this.ModificarContenido_button.Text = "Modificar";
-            this.ModificarContenido_button.UseVisualStyleBackColor = true;
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(16, 36);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(166, 21);
+            this.comboBox1.TabIndex = 10;
             // 
             // Form2
             // 
